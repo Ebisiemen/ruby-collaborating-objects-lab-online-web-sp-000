@@ -1,7 +1,7 @@
 require 'pry'
 class MP3Importer
  
-  attr_accessor :path, :song  
+  attr_accessor :path 
   
   @@all = []
   
@@ -18,5 +18,5 @@ end
 
  def import
    files.each {|file| Song.new_by_filename(file)}
- end 
+  end 
  end      
